@@ -102,14 +102,16 @@ namespace At_day__at_night
             using (FileStream fs = new FileStream("file2-fibik.bin", FileMode.Open))
             using (BinaryReader reader = new BinaryReader(fs, Encoding.UTF8))
             {
-                Console.WriteLine("\n\nЧисла Фибоначчи:");
+                Console.ReadLine();
+                Console.WriteLine("Числа Фибоначчи:");
                 while (fs.Position < fs.Length)
                 {
                     Console.Write(reader.ReadInt32() + " ");
                 }
             }
-            
+
             // задание 2 
+            Console.ReadLine();
             string[] lines = new string[] { "Incase i dt see u, good afternoon, good evening, and good night!" };
 
             string wordToFind = "dt";
@@ -132,7 +134,7 @@ namespace At_day__at_night
                 Console.WriteLine(resultText);
             }
             //3 задание
-
+            Console.ReadLine();
             string text2 = "Biney? - You always have trouble saying Brian. - I have a brother... - A real brother, none of this fucking whore";
             string[] WorldForChange = new string[] { "fucking", "whore" };
 
@@ -156,7 +158,7 @@ namespace At_day__at_night
                 Console.WriteLine(resultText);
             }
             //4
-
+            Console.ReadLine();
             string text3 = "You promised me no more lies. You fucking promised me.";
 
             char[] reversed = text3.Reverse().ToArray();
@@ -176,6 +178,7 @@ namespace At_day__at_night
                 Console.WriteLine(resultText);
             }
             //5
+            Console.ReadLine();
             int count1=0;
             int count2=0;
             int count3=0;
